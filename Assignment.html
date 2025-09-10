@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="icon" href="/images/htmlicon.png" type="image/x-icon">
+</head>
+<body >
+    <form action="" >
+        <fieldset>
+            <legend style="dispaly:block;text-align: center;">Student Details</legend>
+            <label for="name">Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" required><br><br>
+            <label for="lname">Last Name</label>&nbsp;&nbsp;
+            <input type="text" id="lname" required><br><br>
+            <label for="Guardian">Guardian</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="Guardian" required>
+        </fieldset>
+        <fieldset>
+            <legend align="center">Student Contact Details</legend>
+            <label for="phone">Mobile Number</label>&nbsp;
+            <input type="tel" id="phone" pattern="[6-9]\d{9}" maxlength="10" required><br><br>
+            <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+        </fieldset>
+    <fieldset>
+        <legend align="center" >Graduation Details</legend>
+        <label for="ssc" name="ssc">SSC</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="ssc" name="ssc" required><br><br>
+        <label for="inter">Intermediate</label>&nbsp;
+        <input type="checkbox" id="inter" required><br><br>
+        <label for="degree">Degree</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="degree" required>
+    </fieldset>
+    <fieldset>
+        <legend align="center">Message Box</legend>
+        <textarea name="messagebox" id="messagebox" cols="60" rows="9"></textarea>
+    </fieldset><br>
+    <fieldset>
+        <legend align="center">Image Of The Student</legend>
+         <input type="file" id="image" required>
+    </fieldset><br>
+    <label for="range" style="align: right;">Range Of Salary Expectiation</label>
+    <input type="number" min="10000" step="500" required><br><br>
+    <div style="text-align: center;">
+        <button>Submit</button>
+    </div>
+    </form>
+
+</body>
+</html>
